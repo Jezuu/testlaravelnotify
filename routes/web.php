@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// success error info warning \\
 Route::get('/', function () {
     return Notifications::send(
         'success',
-        'Success! Data has been stored.'
+        'Data has been stored.'
     )->view('welcome');
 });

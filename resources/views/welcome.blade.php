@@ -21,8 +21,8 @@
             {!! Notifications::notify(session('success')) !!}
         @endif
 
-        @if (session('danger'))
-            {!! Notifications::notify(session('danger')) !!}
+        @if (session('error'))
+            {!! Notifications::notify(session('error')) !!}
         @endif
 
         @if (session('info'))
