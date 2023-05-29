@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return Notifications::send(
         'success',
-        'Data has been stored.'
+        'Data has been stored.',
+        false
     )->view('welcome');
 });
